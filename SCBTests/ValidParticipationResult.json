@@ -1,0 +1,32 @@
+﻿{
+  "columns": [
+    {
+      "code": "Region",
+      "text": "region",
+      "type": "d"
+    },
+    {
+      "code": "Tid",
+      "text": "valår",
+      "type": "t"
+    },
+    {
+      "code": "ME0104B8",
+      "text": "Valdeltagande i riksdagsval, procent",
+      "type": "c"
+    }
+  ],
+  "comments": [
+    {
+      "variable": "Foobar",
+      "value": "1900",
+      "comment": "Foobar"
+    }
+  ],
+  "data": [
+    {
+      "key": [ "00", "1900" ],
+      "values": [ "00.0" ]
+    }
+  ]
+}
