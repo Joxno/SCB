@@ -43,13 +43,13 @@ namespace SCBTests
             Assert.IsTrue(t_Elections[0].Results.Count == 2);
             Assert.IsTrue(t_Elections[0].Year.Value == 1900);
 
-            Assert.AreEqual(t_Elections[0].Results[0].Region.Code, 0);
-            Assert.AreEqual(t_Elections[0].Results[0].Region.Name, "Foo");
-            Assert.AreEqual(t_Elections[0].Results[0].Participation.Value.Value, 50.0m);
+            Assert.AreEqual(0, t_Elections[0].Results[0].Region.Code);
+            Assert.AreEqual("Foo", t_Elections[0].Results[0].Region.Name);
+            Assert.AreEqual(0.5m, t_Elections[0].Results[0].Participation.Value.Value);
 
-            Assert.AreEqual(t_Elections[0].Results[1].Region.Code, 1);
-            Assert.AreEqual(t_Elections[0].Results[1].Region.Name, "Bar");
-            Assert.AreEqual(t_Elections[0].Results[1].Participation.Value.Value, 25.0m);
+            Assert.AreEqual(1, t_Elections[0].Results[1].Region.Code);
+            Assert.AreEqual("Bar", t_Elections[0].Results[1].Region.Name);
+            Assert.AreEqual(0.25m, t_Elections[0].Results[1].Participation.Value.Value);
         }
     }
 }

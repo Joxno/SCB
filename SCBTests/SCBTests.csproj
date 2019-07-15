@@ -52,6 +52,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ElectionParticipationConverterTests.cs" />
     <Compile Include="ElectionParticipationResultTests.cs" />
     <Compile Include="ElectionResultTests.cs" />
     <Compile Include="ElectionTests.cs" />

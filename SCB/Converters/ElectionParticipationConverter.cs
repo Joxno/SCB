@@ -41,9 +41,19 @@ namespace SCB.Converters
                 Region = new Region { Code = int.Parse(Data.key[0]) },
                 Participation = new Participation
                 {
-                    Value = new Percentage { Value = decimal.Parse(Data.values[0], new CultureInfo("en-US")) }
+                    Value = _ConvertStringToPercentage(Data.values[0])
                 }
             };
+        }
+
+        private Percentage _ConvertStringToPercentage(string StrValue)
+        {
+            return _ConvertToDecimalPercentage(decimal.Parse(StrValue, new CultureInfo("en-US")));
+        }
+
+        private Percentage _ConvertToDecimalPercentage(decimal Value)
+        {
+            return new Percentage { Value = Value * 0.01m };
         }
     }
 }
