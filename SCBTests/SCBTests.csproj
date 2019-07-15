@@ -56,6 +56,7 @@
     <Compile Include="ElectionParticipationResultTests.cs" />
     <Compile Include="ElectionResultTests.cs" />
     <Compile Include="ElectionTests.cs" />
+    <Compile Include="Mock\MockStatisticsRepository.cs" />
     <Compile Include="ParticipationPresenterTests.cs" />
     <Compile Include="PercentagePresenterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TestResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="StatisticsServiceTests.cs" />
     <Compile Include="YearPresenterTests.cs" />
   </ItemGroup>
   <ItemGroup>

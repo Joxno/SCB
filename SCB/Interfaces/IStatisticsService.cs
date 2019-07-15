@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SCB.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,8 @@ namespace SCB.Interfaces
 {
     public interface IStatisticsService
     {
+        IEnumerable<Election> RetrieveElections();
+        IEnumerable<Election> RetrieveAndFilterElections(IFilter<Election> Filter);
+        IEnumerable<Election> RetrieveAndFilterElections(IFilter<IEnumerable<Election>> Filter);
     }
 }
