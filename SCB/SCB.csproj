@@ -73,13 +73,14 @@
     <Compile Include="Models\Year.cs" />
     <Compile Include="Presenters\ElectionPresenter.cs" />
     <Compile Include="Presenters\ElectionResultPresenter.cs" />
+    <Compile Include="Presenters\MultipleElectionsPresenter.cs" />
     <Compile Include="Presenters\ParticipationPresenter.cs" />
     <Compile Include="Presenters\PercentagePresenter.cs" />
     <Compile Include="Presenters\RegionPresenter.cs" />
     <Compile Include="Presenters\YearPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\SCBWebServiceRepository.cs" />
+    <Compile Include="Repositories\SCBLazyRepository.cs" />
     <Compile Include="Services\StatisticsService.cs" />
     <Compile Include="StatisticsResources.Designer.cs">
       <AutoGen>True</AutoGen>
