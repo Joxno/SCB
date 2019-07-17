@@ -10,7 +10,7 @@ namespace SCB.Presenters
 {
     public class ElectionPresenter : ITextPresenter<Election>
     {
-        private static readonly ElectionResultPresenter m_ResultPresenter = new ElectionResultPresenter();
+        private static readonly MultipleElectionResultPresenter m_ResultPresenter = new MultipleElectionResultPresenter();
         private static readonly YearPresenter m_YearPresenter = new YearPresenter();
         public string Present(Election Input)
         {
@@ -24,14 +24,13 @@ namespace SCB.Presenters
         {
             return 
                 m_YearPresenter.Present(Input.Year) + ": " + 
-                m_ResultPresenter.Present(Input.Results.First());
+                m_ResultPresenter.Present(Input.Results);
         }
 
         private string _PresentMultiple(Election Input)
         {
-            return 
-                m_YearPresenter.Present(Input.Year) + ":\n" +
-                String.Join("\n", Input.Results.Select(R => m_ResultPresenter.Present(R)));
+            return
+                m_YearPresenter.Present(Input.Year) + ": " + m_ResultPresenter.Present(Input.Results);
         }
 
         private string _PresentNone(Election Input)

@@ -33,6 +33,7 @@ namespace SCB.Presenters
         private string _PresentMultiple(IEnumerable<ElectionResult> Result)
         {
             return
+                "\n" +
                 String.Join("\n", Result.Select(R => _PresentSingle(R)));
         }
 

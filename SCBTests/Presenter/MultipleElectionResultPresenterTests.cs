@@ -54,7 +54,7 @@ namespace SCBTests.Presenter
                 }
             });
 
-            Assert.AreEqual("Foobar 33.0%\nBar 20.0%", t_PresentedText);
+            Assert.AreEqual("\nFoobar 33.0%\nBar 20.0%", t_PresentedText);
         }
 
         [TestMethod]

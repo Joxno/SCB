@@ -20,7 +20,7 @@ namespace SCB
         {
             var t_Service = _CreateStatisticsService();
             var t_Presenter = _CreatePresenter();
-            var t_Statistics = t_Service.RetrieveAndFilterElections(new HighestParticipation());
+            var t_Statistics = t_Service.RetrieveAndFilterElections(new HighestParticipationAllowMultiple());
 
             Console.Write(t_Presenter.Present(t_Statistics));
         }

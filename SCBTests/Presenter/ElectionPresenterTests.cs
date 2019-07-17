@@ -29,7 +29,7 @@ namespace SCBTests
         {
             var t_PresentedText = m_Presenter.Present(_CreateElectionWithMultipleResults());
 
-            Assert.AreEqual("1900:\nFoo 99.0%\nBar 75.0%", t_PresentedText);
+            Assert.AreEqual("1900: \nFoo 99.0%\nBar 75.0%", t_PresentedText);
         }
 
         [TestMethod]
