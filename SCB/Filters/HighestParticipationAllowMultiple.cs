@@ -17,10 +17,7 @@ namespace SCB.Filters
                 return new Election
                 {
                     Year = E.Year,
-                    Results = _FindAllResultsWithParticipation(
-                        E.Results,
-                        _FindHighestParticipationResult(E.Results).Participation
-                    )
+                    Results = _FindHighestParticipationResults(E.Results)
                 };
             });
         }
@@ -33,6 +30,14 @@ namespace SCB.Filters
         private List<ElectionResult> _FindAllResultsWithParticipation(List<ElectionResult> Results, Participation Value)
         {
             return Results.Where(R => R.Participation.Value.Value == Value.Value.Value).ToList();
+        }
+
+        private List<ElectionResult> _FindHighestParticipationResults(List<ElectionResult> Results)
+        {
+            return _FindAllResultsWithParticipation(
+                Results,
+                _FindHighestParticipationResult(Results).Participation
+            );
         }
     }
 }
