@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SCB.Filters
 {
-    public class HighestParticipationPerElection : IFilter<IEnumerable<Election>>
+    public class HighestParticipation : IFilter<IEnumerable<Election>>
     {
         public IEnumerable<Election> Apply(IEnumerable<Election> Input)
         {

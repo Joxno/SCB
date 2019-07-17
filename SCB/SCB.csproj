@@ -58,7 +58,8 @@
     <Compile Include="DTO\ElectionParticipationResult.cs" />
     <Compile Include="DTO\RegionResult.cs" />
     <Compile Include="Factories\ElectionFactory.cs" />
-    <Compile Include="Filters\HighestParticipationPerElection.cs" />
+    <Compile Include="Filters\HighestParticipation.cs" />
+    <Compile Include="Filters\HighestParticipationAllowMultiple.cs" />
     <Compile Include="Interfaces\IConverter.cs" />
     <Compile Include="Interfaces\IElectionFactory.cs" />
     <Compile Include="Interfaces\IFilter.cs" />

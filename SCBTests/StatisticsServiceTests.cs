@@ -30,7 +30,7 @@ namespace SCBTests
             var t_Service = new StatisticsService(t_Repo);
 
             var t_Elections = t_Service.RetrieveAndFilterElections(
-                new HighestParticipationPerElection()
+                new HighestParticipation()
             ).ToList();
 
             Assert.AreEqual(1, t_Elections.Count);
