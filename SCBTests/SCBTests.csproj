@@ -52,15 +52,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ElectionParticipationConverterTests.cs" />
+    <Compile Include="Converter\ElectionParticipationConverterTests.cs" />
     <Compile Include="ElectionParticipationResultTests.cs" />
-    <Compile Include="ElectionResultTests.cs" />
-    <Compile Include="ElectionTests.cs" />
+    <Compile Include="Presenter\ElectionResultPresenterTests.cs" />
+    <Compile Include="Presenter\ElectionPresenterTests.cs" />
     <Compile Include="Mock\MockStatisticsRepository.cs" />
-    <Compile Include="ParticipationPresenterTests.cs" />
-    <Compile Include="PercentagePresenterTests.cs" />
+    <Compile Include="Presenter\ParticipationPresenterTests.cs" />
+    <Compile Include="Presenter\PercentagePresenterTests.cs" />
+    <Compile Include="Presenter\MultipleElectionResultPresenterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegionConverterTests.cs" />
+    <Compile Include="Converter\RegionConverterTests.cs" />
     <Compile Include="ElectionFactoryTests.cs" />
     <Compile Include="TestResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -68,7 +69,7 @@
       <DependentUpon>TestResources.resx</DependentUpon>
     </Compile>
     <Compile Include="StatisticsServiceTests.cs" />
-    <Compile Include="YearPresenterTests.cs" />
+    <Compile Include="Presenter\YearPresenterTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

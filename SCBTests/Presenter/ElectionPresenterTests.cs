@@ -7,7 +7,7 @@ using SCB.Presenters;
 namespace SCBTests
 {
     [TestClass]
-    public class ElectionTests
+    public class ElectionPresenterTests
     {
         private ElectionPresenter m_Presenter = null;
         [TestInitialize]

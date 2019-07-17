@@ -74,6 +74,7 @@
     <Compile Include="Models\Year.cs" />
     <Compile Include="Presenters\ElectionPresenter.cs" />
     <Compile Include="Presenters\ElectionResultPresenter.cs" />
+    <Compile Include="Presenters\MultipleElectionResultPresenter.cs" />
     <Compile Include="Presenters\MultipleElectionsPresenter.cs" />
     <Compile Include="Presenters\ParticipationPresenter.cs" />
     <Compile Include="Presenters\PercentagePresenter.cs" />

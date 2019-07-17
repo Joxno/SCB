@@ -6,7 +6,7 @@ using SCB.Presenters;
 namespace SCBTests
 {
     [TestClass]
-    public class ElectionResultTests
+    public class ElectionResultPresenterTests
     {
         [TestMethod]
         public void PresentElectionResult()
